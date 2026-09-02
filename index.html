@@ -3,70 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Brigitte Morta | Portfolio</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png" />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <!-- =============================
+         Header / Navigation
+         ============================= -->
+
     <header class="site-header">
       <div class="navbar">
         <div class="brand">
-          <h1>Brigitte Morta</h1>
-          <p>Aspiring Full-Stack Web Developer</p>
+          <a href="htttps://bmorta.github.io/Portfolio/" class="brand-logo">
+            <img src="images/logo.png" alt="Brigitte Morta logo" />
+          </a>
+
+          <div class="brand-text">
+            <h1>
+              <a href="htttps://bmorta.github.io/Portfolio/">Brigitte Morta</a>
+            </h1>
+
+            <p>Aspiring Full-Stack Web Developer</p>
+          </div>
         </div>
 
         <nav aria-label="Main navigation">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- About / Hero Section -->
+      <!-- =============================
+           Hero / About Section
+           ============================= -->
+
       <section id="about" class="hero">
         <div class="hero-content">
           <div class="hero-text">
+            <p class="hero-intro">WELCOME TO MY PORTFOLIO</p>
+
             <h2>Hi, I'm Brigitte!</h2>
 
-            <p>
+            <p class="hero-description">
               I am currently learning Full-Stack Web Development with MST
               Connect PH. I want to build useful web applications and grow as a
               professional developer.
             </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn primary-btn">
+                &lt;/&gt; View My Work
+              </a>
+
+              <a href="#contact" class="btn secondary-btn"> Contact Me </a>
+            </div>
           </div>
 
           <div class="hero-image">
-            <img src="images/profile.jpg" alt="Brigitte Morta" />
+            <div class="profile-glow">
+              <img
+                src="images/profile.jpg"
+                alt="Brigitte Morta working on a computer"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Skills Section -->
+      <!-- =============================
+           Skills Section
+           ============================= -->
+
       <section id="skills" class="section">
-        <h2 class="section-title">Skills I Am Learning</h2>
+        <div class="section-heading">
+          <span class="section-icon">&lt;/&gt;</span>
+
+          <h2 class="section-title">Skills I Am Learning</h2>
+        </div>
 
         <div class="skills-grid">
-          <article class="skill-card">Semantic HTML</article>
+          <article class="skill-card">
+            <span class="skill-number">01</span>
 
-          <article class="skill-card">CSS and Responsive Layouts</article>
+            <h3>Semantic HTML</h3>
 
-          <article class="skill-card">JavaScript Fundamentals</article>
+            <p>Structuring web content using meaningful HTML elements.</p>
+          </article>
 
-          <article class="skill-card">Git and GitHub Workflow</article>
+          <article class="skill-card">
+            <span class="skill-number">02</span>
+
+            <h3>CSS & Responsive Layouts</h3>
+
+            <p>
+              Creating modern designs that work across different screen sizes.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-number">03</span>
+
+            <h3>JavaScript Fundamentals</h3>
+
+            <p>Learning how to create interactive and dynamic websites.</p>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-number">04</span>
+
+            <h3>Git & GitHub Workflow</h3>
+
+            <p>Managing code and projects using version control.</p>
+          </article>
         </div>
       </section>
 
-      <!-- Projects Section -->
+      <!-- =============================
+           Projects Section
+           ============================= -->
+
       <section id="projects" class="section">
-        <h2 class="section-title">Projects</h2>
+        <div class="section-heading">
+          <span class="section-icon">◆</span>
+
+          <h2 class="section-title">Projects</h2>
+        </div>
 
         <div class="projects-grid">
           <article class="project-card">
+            <span class="project-tag"> HTML & CSS </span>
+
             <h3>Personal Portfolio</h3>
 
             <p>
@@ -74,63 +162,125 @@
               future JavaScript improvements.
             </p>
 
-            <a href="https://bmorta.github.io/Portfolio/" class="btn">
+            <a
+              href="https://github.com/Bmorta/repository"
+              class="btn primary-btn"
+            >
               View Repository
             </a>
           </article>
 
           <article class="project-card">
+            <span class="project-tag"> Coming Soon </span>
+
             <h3>Project 2</h3>
 
             <p>
-              Add your next project here and describe what you built and
-              learned.
+              Add your next project here and describe what you built and what
+              you learned.
             </p>
 
-            <a href="#" class="btn"> Add Repository Link </a>
+            <a href="#" class="btn secondary-btn"> View Project </a>
           </article>
 
           <article class="project-card">
+            <span class="project-tag"> Coming Soon </span>
+
             <h3>Project 3</h3>
 
             <p>
-              Add another project here so your project section can demonstrate
-              wrapping.
+              Add another project here to demonstrate your growing development
+              skills.
             </p>
 
-            <a href="#" class="btn"> Add Repository Link </a>
+            <a href="#" class="btn secondary-btn"> View Project </a>
           </article>
         </div>
       </section>
 
-      <!-- Contact Section -->
-      <section id="contact" class="section">
-        <h2 class="section-title">Contact Me</h2>
+      <!-- =============================
+           Contact Section
+           ============================= -->
 
-        <form class="contact-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+      <section id="contact" class="section contact-section">
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="section-heading">
+              <span class="section-icon">@</span>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+              <h2 class="section-title">Contact Me</h2>
+            </div>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+            <p>
+              Have a project idea or want to connect? Feel free to send me a
+              message. <br><br>
 
-          <button type="submit" class="btn">Send Message</button>
-        </form>
+              brigittemorta@gmail.com <br>
+              +639067242784
+            </p>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn primary-btn">Send Message</button>
+          </form>
+        </div>
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- =============================
+         Footer
+         ============================= -->
+
     <footer class="site-footer">
-      <p>&copy; 2026 Brigitte. All rights reserved.</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Brigitte Morta logo" />
 
-      <p>
-        <a href="https://github.com/Bmorta">GitHub</a>
+          <p>© 2026 Brigitte Morta. All rights reserved.</p>
+        </div>
 
-        <a href="https://www.linkedin.com/in/brigittemorta"> LinkedIn </a>
-      </p>
+        <div class="footer-links">
+          <a href="https://github.com/Bmorta"> GitHub </a>
+
+          <a href="https://www.linkedin.com/in/brigittemorta"> LinkedIn </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
